@@ -27,15 +27,21 @@
 
 \title{A Data Revolution in the Cognitive Sciences}
  
-\author{{\large \bf John V. McDonnell (john.mcdonnell@nyu.edu)} (organizer) \\
+\author{{\large \bf John V. McDonnell (\emph{moderator}) and Todd M. Gureckis}  \\
   New York University Department of Psychology, 6 Washington Pl. 8th Floor \\
   New York, NY 10003 USA
-  \AND {\large \bf Winter Mason (m@winteram.com)} \\
+  \AND {\large \bf Johan Bolen (jbollen@indiana.edu)} \\
+  Indiana University School of Informatics and Computing 919 E 10th Street, Room 304\\
+  Bloomington, IN 47408 USA
+  \AND {\large \bf Georg Langs (georg.langs@meduniwien.ac.at)} \\
+  Medical University of Vienna, Waehringer Guertel 18-20 \\
+  A-1090 Vienna AUSTRIA
+  \AND {\large \bf Winter Mason, Meeyoung Cha, Krishna Gummadi, Farshad Kooti, and Haeryun Yang} \\
   Howe School of Technology Managemeent, Stevens Institute \\
   Hoboken, NJ 07030, USA
   \AND {\large \bf John Myles White (jmw@johnmyleswhite.com)} \\
   Princeton University Department of Psychology \\
-  Princeton, NJ 08540-1010 USA}
+  Princeton, NJ 08540 USA}
 
 
 \begin{document}
@@ -56,13 +62,54 @@ online experimentation to the mining of large datasets. These new opportunities
 have also come with new challenges, as scientists must overcome the challenges
 these methods bring. The goal of this symposium would be to highlight how
 researchers are making use of these new tools and the techniques they have used
-to solve the challenges they represent. Speakers will discuss online laboratory
-experiments, machine learning techniques applied to neuroscientific imaging, and
-online social network analysis.
+to solve the challenges they represent. 
+
+A major theme of the symposium will be the way in which these new techniques
+represent more than just a scaling up of previous efforts: Researchers are now
+able to ask new questions in different ways than they were before. For example,
+collective behavior has long been of interest to cognitive scientists as a way of
+understanding how human interactions lead to emergent group behavior and
+collective intelligence. But until recently, it has been difficult to study
+authentic human social interaction as it occurs in the environment on a large
+scale. Now that scientists have access to anonymized data from massive social
+networks, these interactions can be studied in the environment. Johan Bolen and
+Winter Mason will be discussing work they have done using this newly available
+data source.
+
+Another novel source of data are online labor marketplaces such as Amazon's
+Mechanical Turk (AMT) service. These allow researchers to perform controlled
+studies involving large numbers of participants in short periods of time. This
+allows researchers to run experiments requiring far more data than in the past,
+such as brief one-shot studies with thousands of participants or learning task
+optimization. John Myles White and John McDonnell will talk about their work
+running studies online with AMT.
+
+Cognitive neuroscience has also been a major beneficiary of the data revolution.
+The prevalence of fMRI has led to the amassing of petabytes of scanning data.
+Analysis of these data poses challenges in terms of statistical rigor (given the
+problem of multiple comparisons on a massive scale) and managing immense
+quantities of data. Georg Langs will speak about his work using cutting edge
+machine learning techniques to derive new insights from imaging data.
+
+\section{Machine Learning Approaches in Neuroimaging and Medical Image Analysis.}
+\subsubsection{Georg Langs}
+
+The computational analysis of biomedical imaging data has become central in
+medical research and clinical application. The talk will highlight two recent
+developments that might shape research in this area in the near future. Both are
+connected to the impact of the emerging ability to process large data, and the
+approaches that become relevant. The advent of the capability to process large
+data---hundreds of terabytes---has changed paradigms in how we approach classical
+pattern recognition problems in this domain. Medical research fields that rely on
+exploratory approaches together with large and complex data to study and
+understand physiological processes are increasingly shaped by a tight interaction
+among researchers in machine learning and medical sciences. In the talk I will
+discuss these directions, highlight open issues, and illustrate them
+with examples from medical image retrieval, and neuroimaging research and
+clinical application.
 
 \section{The emergence of social conventions in social networks}
-\subsubsection{Winter Mason, Meeyoung Cha, Krishna Gummadi, Farshad Kooti, and
-Haeryun Yang}
+\subsubsection{Winter Mason, Meeyoung Cha, Krishna Gummadi, Farshad Kooti, and Haeryun Yang}
 
 Social conventions and norms are a powerful and ubiquitous guide for behavior.
 However, the way in which conventions emerge in communities is not very well
@@ -126,6 +173,9 @@ but not the quality of the data. Conversely, we found that using a strict measur
 to ensure that participants had understood instructions resulted in a
 considerable improvement in performance and convergence with in-lab findings.
 \nocite{Shepard:1961wo}
+
+
+
 
 \bibliographystyle{apacite}
 
