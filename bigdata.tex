@@ -1,0 +1,138 @@
+% 
+% Annual Cognitive Science Conference
+% Sample LaTeX Paper -- Proceedings Format
+% 
+
+% Original : Ashwin Ram (ashwin@cc.gatech.edu)       04/01/1994
+% Modified : Johanna Moore (jmoore@cs.pitt.edu)      03/17/1995
+% Modified : David Noelle (noelle@ucsd.edu)          03/15/1996
+% Modified : Pat Langley (langley@cs.stanford.edu)   01/26/1997
+% Latex2e corrections by Ramin Charles Nakisa        01/28/1997 
+% Modified : Tina Eliassi-Rad (eliassi@cs.wisc.edu)  01/31/1998
+% Modified : Trisha Yannuzzi (trisha@ircs.upenn.edu) 12/28/1999 (in process)
+% Modified : Mary Ellen Foster (M.E.Foster@ed.ac.uk) 12/11/2000
+% Modified : Ken Forbus                              01/23/2004
+% Modified : Eli M. Silk (esilk@pitt.edu)            05/24/2005
+% Modified: Niels Taatgen (taatgen@cmu.edu) 10/24/2006
+
+%% Change ``a4paper'' in the following line to ``letterpaper'' if you are
+%% producing a letter-format document.
+
+\documentclass[10pt,letterpaper]{article}
+
+\usepackage{cogsci}
+\usepackage{pslatex}
+\usepackage{apacite}
+
+
+\title{A Data Revolution in the Cognitive Sciences}
+ 
+\author{{\large \bf John V. McDonnell (john.mcdonnell@nyu.edu)} (organizer) \\
+  New York University Department of Psychology, 6 Washington Pl. 8th Floor \\
+  New York, NY 10003 USA
+  \AND {\large \bf Winter Mason (m@winteram.com)} \\
+  Howe School of Technology Managemeent, Stevens Institute \\
+  Hoboken, NJ 07030, USA
+  \AND {\large \bf John Myles White (jmw@johnmyleswhite.com)} \\
+  Princeton University Department of Psychology \\
+  Princeton, NJ 08540-1010 USA}
+
+
+\begin{document}
+
+\maketitle
+
+
+\textbf{Keywords:} 
+Machine Learning; Cognitive Neuroscience; Online Experiments; Social Network
+Analysis; Text Analysis; Methods\\
+
+In the 1980s and 90s, the broad availability of PCs power fueled a renaissance in
+cognitive science, changing the way we run experiments, the tools we use for
+analysis, and lowering computational barriers to the development of sophisticated
+computational models of cognition. As technology continues to advance, the advent
+of big data is now leading to methodological advances on various fronts, from
+online experimentation to the mining of large datasets. These new opportunities
+have also come with new challenges, as scientists must overcome the challenges
+these methods bring. The goal of this symposium would be to highlight how
+researchers are making use of these new tools and the techniques they have used
+to solve the challenges they represent. Speakers will discuss online laboratory
+experiments, machine learning techniques applied to neuroscientific imaging, and
+online social network analysis.
+
+\section{The emergence of social conventions in social networks}
+\subsubsection{Winter Mason, Meeyoung Cha, Krishna Gummadi, Farshad Kooti, and
+Haeryun Yang}
+
+Social conventions and norms are a powerful and ubiquitous guide for behavior.
+However, the way in which conventions emerge in communities is not very well
+understood, largely due to a paucity of available data.  In this study, we
+leverage the widespread use of the micro-blogging platform Twitter and focus on
+competing conventions for attributing reposts to the original source.  We analyze
+over 1.7 billion ``tweets'' from 54 million users, from the very first tweet in
+2006 up to September 2009, and observe how the conventions emerged and spread
+through the network of Twitter users.  We observe that initially the most
+successful conventions were borrowed from natural language (``via'' and
+``retweeting''), but eventually a community-specific convention came to dominate
+(``RT'').  We see that some conventions are used by divergent groups of people,
+while others are abandoned in favor of more efficient expressions.  We also
+observe the failure of some conventions despite higher efficiency (i.e., fewer
+characters) and explicit endorsement of their adoption.  Our results suggest that
+there are some features that encourage the adoption of one convention over
+another, but that there is still significant inherent unpredictability in what
+convention will come to dominate.
+
+\section{Context and decision making in a massive online experiment}
+\subsubsection{John Myles White}
+
+Online labor markets, like Amazon's Mechanical Turk (AMT), offer psychologists
+many opportunities.  The convenience of the virtual lab provided by AMT has
+already won over many psychologists, but transitioning research from the lab to
+the web browser offers other benefits. AMT allows psychologists to deploy
+experiments that are fully automated: The recruitment, instruction, core
+experiment and debriefing periods can be identical for all subjects, which
+largely removes the possibility that undocumented components of an experiment
+might exert substantive influences on the final results (Doyen et al., 2012).
+\nocite{Doyen} Moreover, the ease of recruiting large numbers of subjects for
+tasks provides important increases in statistical power, which can allay concerns
+about false positive psychology (Simmons et al., 2012).  \nocite{Simmons} But I
+will argue that the primary value of AMT is not purely methodological: the
+strength of the virtual lab is that it allows psychologists to pursue large-scale
+between-subjects designs in which a large number of subjects perform a very small
+number of trials.  This type of research is often eschewed because of the
+prohibitive cost of recruiting hundreds or thousands of subjects in the lab, but
+previous research (e.g. Gneezy et al. 2006) \nocite{Gneezy} suggests that studies
+of decision-making can be powerfully influenced by contextual cues.  Our recent
+work has found evidence that the effects of context on decisions may be even more
+problematic than previously believed: in our studies of decision-making, we find
+that the effects of ostensibly innocuous local context can shift the basic
+qualitative results of experiments.
+
+\section{Can online data be trusted? Learning tasks on Amazon's Mechanical Turk.}
+\subsubsection{John V. McDonnell, Todd M. Gureckis}
+
+Amazon Mechanical Turk (AMT) has attracted attention from experimental
+psychologists interested in gathering human subject data more efficiently.
+However, relative to traditional laboratory studies, many aspects of the testing
+environment are not under the experimenter's control. We have empirically
+evaluated the fidelity of AMT for use in cognitive behavioral experiments. These
+types of experiment differ from simple surveys in that they require multiple
+trials with sustained attention from participants.  Our initial attempts to
+replicate the classic Shepard, Hovland, and Jenkins (1961) task were only
+partially successful. However, after systematically studying the effects of
+compensation and validation we were able to more closely match previous in-lab
+findings. Specifically, we found that compensation altered the rate of sign-ups,
+but not the quality of the data. Conversely, we found that using a strict measure
+to ensure that participants had understood instructions resulted in a
+considerable improvement in performance and convergence with in-lab findings.
+\nocite{Shepard:1961wo}
+
+\bibliographystyle{apacite}
+
+\setlength{\bibleftmargin}{.125in}
+\setlength{\bibindent}{-\bibleftmargin}
+
+\bibliography{symposium}
+
+
+\end{document}
